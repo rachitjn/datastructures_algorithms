@@ -57,10 +57,9 @@ class count_sort{
 	}
 };
 class radix_sort{
-	//use when max(A) < 10^7
 	//stable sorts vector A of ints
-	//r = log2(max(A)) bits in a group b/r iterations
-	//space needed is O(max(A))
+	//r = log2(max(n)) bits in a group b/r iterations
+	//space needed is O(max(2^r))
 	vpii res;
 	count_sort obj;
 	public:
